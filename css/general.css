@@ -1,0 +1,104 @@
+.section-portfolio {
+  padding: 9.6rem 0 9.6rem;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.heading-primary {
+  font-size: 6.2rem;
+  line-height: 1.05;
+  font-weight: 700;
+  margin-bottom: 0; /* Reset the bottom margin */
+}
+.tag {
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #cbfe47;
+  margin-top: 0; /* Reset the top margin */
+}
+
+.grid {
+  display: grid;
+  column-gap: 2.2rem;
+  row-gap: 2.2rem;
+}
+
+.grid--center--vertically {
+  align-items: center;
+}
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--2--rows {
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid--3--rows {
+  grid-template-rows: repeat(3, 1fr);
+}
+.span-three-cols {
+  grid-column: span 3;
+}
+
+.span-two-rows {
+  grid-row: span 2;
+}
+
+.box-outline {
+  border-radius: 2rem;
+  transition: all 0.3s;
+}
+
+.box-outline-color1 {
+  background-color: #141414;
+}
+
+.box-outline-color2 {
+  background-color: #322f2f;
+}
+/* Responsive styles */
+
+@media only screen and (max-width: 1024px) {
+  .grid--4--cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tag {
+    font-size: 8rem;
+    font-weight: 600;
+  }
+
+  .heading-primary {
+    font-size: 4.2rem;
+    font-weight: 600;
+  }
+
+  .span-three-cols {
+    grid-column: span 1;
+  }
+  .profile-img {
+    width: 50%;
+  }
+  .main-nav-link.link-btn {
+    display: none !important;
+  }
+ 
+  
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-weight: 600 !important;
+    font-size: 1.4rem !important;
+  }
+  
+}
